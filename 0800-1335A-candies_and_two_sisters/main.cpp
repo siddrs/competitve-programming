@@ -9,19 +9,14 @@ int main(){
     while (t--){
         unsigned int n;
         std::cin >> n;
-        unsigned int a, b;
 
-        a = n-1;
-        b = 1;
         int ans = 0;
 
-        while (a > b)
-        {
-            a--;
-            b++;
-            ans++;    
+        if (n % 2 == 0){
+            ans = ((n-2)/2);
+        } else {
+            ans = ((n-1)/2);
         }
-
         std::cout << ans << "\n";
     }
 
