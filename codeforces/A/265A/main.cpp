@@ -1,0 +1,56 @@
+/*
+    author: sidrs
+    created: 2024-07-28 14:43:28
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+typedef long double ld;
+typedef vector<int> vi;
+typedef vector<long long> vll;
+
+#define pb push_back
+#define nl "\n"
+const long long MOD = 1e9 + 7;
+const long long INF = 1e9;
+const long double PI = 3.141592653589793238462;
+
+void solve();
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    // freopen("problemname.in", "r", stdin);
+    // freopen("problemname.out", "w", stdout);
+
+    solve();
+
+    return 0;
+}
+
+void solve(){
+
+    string s, t;
+    cin >> s >> t;
+
+    // int i = 0;
+    // while (i < t.size()) {
+    //     for (int j = 0; j < t.size(); j++){
+    //         if (s[i] == t[j]){
+    //             i++;
+    //         }
+    //     }
+    // } 
+
+    int i = 0; int j = 0;
+    while (j < t.size()){
+        if (s[i] == t[j]) {
+            i++;
+        }
+        j++;
+    }
+
+    cout << (i + 1) << nl;
+} 
